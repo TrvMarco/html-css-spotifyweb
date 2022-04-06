@@ -22,7 +22,9 @@ body{
     width: 250px;
     height: calc(100vh - 90px);
     background-color: #000;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .spotify-logo{
@@ -62,15 +64,6 @@ body{
     margin-bottom: 30px;
 }
 
-.aside-bottom{
-    position: absolute;
-    bottom: 0;
-    left: 10px;
-}
-
-.install-app{
-    padding-bottom: 5px;
-}
 
 /* -----------
     HEADER
