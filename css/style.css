@@ -19,7 +19,7 @@ body{
 ------------*/
 .side-bar{
     width: 250px;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 90px);
     background-color: aqua;
 }
 
@@ -27,7 +27,7 @@ body{
     HEADER
 ------------*/
 header{
-    height: 100px;
+    height: 90px;
     width: calc(100% - 250px);
     background-color: coral;
     position: fixed;
@@ -40,7 +40,7 @@ header{
    FOOTER
 ------------*/
 footer{
-    height: 70px;
+    height: 90px;
     width: 100%;
     background-color: brown;
     position: fixed;
