@@ -104,6 +104,24 @@ header{
     top: 0;
     right: 0;
     overflow-x: 10;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #fff;
+}
+
+.upgrade-button a{
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    display: block;
+}
+
+.upgrade-button{
+    border: 1px solid #fff;
+    border-radius: 20px;
+    margin-right: 20px;
 }
 
 /* -----------
