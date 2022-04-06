@@ -32,11 +32,11 @@ body{
     padding: 20px;
 }
 
-.nav-top ul, .nav-bottom ul{
+.nav-top ul, .nav-bottom ul, .top-nav ul{
     list-style: none;
 }
 
-.nav-top a, .nav-bottom a{
+.nav-top a, .nav-bottom a, .top-nav a{
     text-decoration: none;
     color: inherit;
     padding: 5px;
@@ -131,6 +131,30 @@ main{
     display: flex;
     background-color: #141922;
 }
+
+.main-box{
+    width: calc(100% - 250px);
+    margin-top: 90px;
+}
+
+/* modifiche lista top-nav aggiunte a liste side bar */
+.top-nav{
+    width: 100%;
+    padding: 20px 0;
+}
+
+.top-nav ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    gap: 20px;
+}
+
+.top-nav a{
+    padding: 3px 5px;
+}
+
 
 /* -----------
    FOOTER
