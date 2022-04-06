@@ -12,6 +12,7 @@
 ------------*/
 body{
     font-family: 'Montserrat', sans-serif;
+    color: #717171;
 }
 
 /* -----------
@@ -21,7 +22,22 @@ body{
     width: 250px;
     height: calc(100vh - 90px);
     background-color: #000;
+    padding: 20px;
 }
+
+.spotify-logo{
+    width: 80%;
+}
+
+.nav-top ul, .nav-bottom ul{
+    list-style: none;
+}
+
+.nav-top a, .nav-bottom a{
+    text-decoration: none;
+    color: inherit;
+}
+
 
 /* -----------
     HEADER
@@ -35,6 +51,8 @@ header{
     right: 0;
     overflow-x: 10;
 }
+
+
 
 /* -----------
    FOOTER
