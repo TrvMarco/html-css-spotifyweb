@@ -22,6 +22,7 @@ body{
     width: 250px;
     height: calc(100vh - 90px);
     background-color: #000;
+    position: relative;
 }
 
 .spotify-logo{
@@ -48,6 +49,7 @@ body{
 
 .nav-bottom .fa-square-plus{
     font-size: 30px;
+    margin-right: 5px;
 }
 
 .nav-bottom h4{
@@ -60,8 +62,14 @@ body{
     margin-bottom: 30px;
 }
 
-.nav-bottom{
-    overflow-y: auto;
+.aside-bottom{
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+}
+
+.install-app{
+    padding-bottom: 5px;
 }
 
 /* -----------
@@ -76,8 +84,6 @@ header{
     right: 0;
     overflow-x: 10;
 }
-
-
 
 /* -----------
    FOOTER
