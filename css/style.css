@@ -22,11 +22,11 @@ body{
     width: 250px;
     height: calc(100vh - 90px);
     background-color: #000;
-    padding: 20px;
 }
 
 .spotify-logo{
-    width: 80%;
+    width: 70%;
+    padding: 20px;
 }
 
 .nav-top ul, .nav-bottom ul{
@@ -36,8 +36,33 @@ body{
 .nav-top a, .nav-bottom a{
     text-decoration: none;
     color: inherit;
+    padding: 10px;
+    display: flex;
+    align-items: center;
 }
 
+.nav-icon{
+    width: 30px;
+    margin-right: 5px;
+}
+
+.nav-bottom .fa-square-plus{
+    font-size: 30px;
+}
+
+.nav-bottom h4{
+    text-transform: uppercase;
+    padding-left: 10px;
+    color: #fff;
+}
+
+.nav-top{
+    margin-bottom: 30px;
+}
+
+.nav-bottom{
+    overflow-y: auto;
+}
 
 /* -----------
     HEADER
