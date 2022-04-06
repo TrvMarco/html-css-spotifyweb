@@ -1,0 +1,49 @@
+/* -----------
+    RESET
+------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -----------
+    BODY
+------------*/
+body{
+    display: flex;
+}
+
+/* -----------
+   SIDE BAR
+------------*/
+.side-bar{
+    width: 250px;
+    height: calc(100vh - 70px);
+    background-color: aqua;
+}
+
+/* -----------
+    HEADER
+------------*/
+header{
+    height: 100px;
+    width: calc(100% - 250px);
+    background-color: coral;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow-x: 10;
+}
+
+/* -----------
+   FOOTER
+------------*/
+footer{
+    height: 70px;
+    width: 100%;
+    background-color: brown;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
