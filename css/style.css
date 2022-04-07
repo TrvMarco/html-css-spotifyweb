@@ -283,13 +283,29 @@ footer{
     width: 70%;
     height: 5px;
     background-color: #5a5a5a;
+    border-radius: 50px;
+    margin: 0 20px;
 }
 
 .footer-center-bottom{
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-center{
     flex-direction: column;
     justify-content: space-between;
+}
+
+.player-bar-current{
+    width: 20%;
+    height: 5px;
+    background-color: #c1c1c1;
+    border-radius: 50px; 
+}
+
+.small-player-bar{
+    width: 30%;
 }
