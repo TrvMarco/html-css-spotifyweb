@@ -20,7 +20,6 @@ body{
 ------------*/
 .side-bar{
     width: 250px;
-    height: calc(100vh - 90px);
     background-color: #000;
     display: flex;
     flex-direction: column;
@@ -103,7 +102,6 @@ header{
     position: fixed;
     top: 0;
     right: 0;
-    overflow-x: 10;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -125,16 +123,17 @@ header{
 }
 
 /* -----------
-   FOOTER
+   MAIN
 ------------*/
 main{
     display: flex;
     background-color: #141922;
+    height: calc(100vh - 90px);
 }
 
-.main-box{
+.main-container{
     width: calc(100% - 250px);
-    margin-top: 90px;
+    padding-top: 90px;
 }
 
 /* modifiche lista top-nav aggiunte a liste side bar */
@@ -155,12 +154,55 @@ main{
     padding: 3px 5px;
 }
 
+.music-container{
+    width: 95%;
+    margin: auto;
+}
+
+.music-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.boxprova{
+    width: calc(100% / 6);
+    padding: 10px 0;
+}
+
+.cover-img{
+    width: 100%;
+}
+
+.music-description{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.cover{
+    position: relative;
+}
+
+.overlay{
+    width: 100%;
+    font-size: 0;
+    background-color: rgb(8, 11, 18, 0.8);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+}
+
+.boxprova:hover .overlay{
+    display: block;
+}
 
 /* -----------
    FOOTER
 ------------*/
 footer{
     height: 90px;
-    width: 100%;
     background-color: #282828;
 }
