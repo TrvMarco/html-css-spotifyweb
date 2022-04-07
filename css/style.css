@@ -7,6 +7,11 @@
     box-sizing: border-box;
 }
 
+img {
+    max-width:100%;
+     vertical-align:bottom;
+}
+
 /* -----------
    TYP0
 ------------*/
@@ -195,8 +200,21 @@ main{
     display: none;
 }
 
-.boxprova:hover .overlay{
+.boxprova:hover .overlay, .boxprova:hover .play-icon {
     display: block;
+}
+
+.play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.play-icon{
+    transform: scale(3);
+    display: none;
 }
 
 /* -----------
