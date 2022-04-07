@@ -239,4 +239,57 @@ main{
 footer{
     height: 90px;
     background-color: #282828;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.footer-left, .footer-center, .footer-right{
+    display: flex;
+    align-items: center;
+}
+
+.footer-left, .footer-right{
+    width: 20%;
+}
+
+.footer-center{
+    width: 60%;
+}
+
+.footer-left img{
+    width: 70px;
+    padding-right: 10px;
+}
+
+.song-actions{
+    padding-left: 30px;
+}
+
+.song-actions i {
+    margin: 0 5px;
+}
+
+.footer-center-top i{
+    font-size: 18px;
+    margin: 0 15px;
+}
+
+.footer-center-top i:nth-child(3){
+    transform: scale(1.5);
+}
+
+.player-bar{
+    width: 70%;
+    height: 5px;
+    background-color: #5a5a5a;
+}
+
+.footer-center-bottom{
+    width: 100%;
+}
+
+.footer-center{
+    flex-direction: column;
+    justify-content: space-between;
 }
