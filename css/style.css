@@ -18,6 +18,7 @@ img {
 body{
     font-family: 'Montserrat', sans-serif;
     color: #717171;
+    font-weight: 500;
 }
 
 .music-container h3, h2{
@@ -86,6 +87,7 @@ body{
     display: flex;
     align-items: center;
     padding-top: 10px;
+    color: #fff;
 }
 
 .account img{
@@ -237,6 +239,7 @@ main{
 
 .cover-container:hover .overlay, .cover-container:hover .play-icon {
     display: block;
+    cursor: pointer;
 }
 
 .play{
@@ -294,7 +297,7 @@ footer{
 }
 
 .song-actions{
-    padding-left: 20px;
+    padding-left: 15px;
 }
 
 .song-actions i {
@@ -303,7 +306,7 @@ footer{
 
 .footer-center-top i{
     font-size: 18px;
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 .footer-center-top i:nth-child(3){
@@ -392,4 +395,26 @@ footer{
         display: flex;
         margin-bottom: 10px;
     }
+
+    .install-app, .account{
+        display: flex;
+        justify-content: center;
+        padding-top: 5px;
+    }
+
+    .account img{
+        margin: 0;
+    }
+}
+
+/* -------------
+   HOVER EFFECTS
+---------------*/
+.side-bar a:hover, .install-app:hover, .top-nav a:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+.upgrade-button:hover{
+    transform: scale(1.1);
 }
