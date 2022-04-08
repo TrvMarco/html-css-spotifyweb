@@ -491,3 +491,15 @@ footer{
 .player-bar:hover .player-bar-current::before{
     display: block;
 }
+
+.footer-left i:hover, .footer-left small:hover{
+    color: #FFF;
+}
+
+.footer-left small:hover{
+    text-decoration: underline;
+}
+
+.footer-center-top .fa-circle-play:hover{
+    transform: scale(1.7);
+}
