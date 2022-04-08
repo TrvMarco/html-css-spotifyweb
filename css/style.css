@@ -118,6 +118,18 @@ body{
     font-size: 30px;
 }
 
+/* HIDDEN PARTS FOR MEDIAQUERY */
+.spotify-logo-small{
+    display: none;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.spotify-logo-small img{
+    width: 80%;
+}
+
+
 /* -----------
     HEADER
 ------------*/
@@ -167,7 +179,7 @@ main{
 /* modifiche lista top-nav aggiunte a liste side bar */
 .top-nav{
     width: 100%;
-    padding: 20px 0;
+    padding: 15px 0;
 }
 
 .top-nav ul{
@@ -196,7 +208,6 @@ main{
 
 .cover-container{
     width: calc(100% / 6 - 10px);
-    transition: 1s;
 }
 
 .cover-img{
@@ -283,7 +294,7 @@ footer{
 }
 
 .song-actions{
-    padding-left: 30px;
+    padding-left: 20px;
 }
 
 .song-actions i {
@@ -310,6 +321,7 @@ footer{
 .footer-center-bottom{
     width: 100%;
     display: flex;
+    gap: 10px;
     justify-content: center;
     align-items: center;
 }
@@ -326,14 +338,58 @@ footer{
     border-radius: 50px; 
 }
 
-.small-player-bar{
-    width: 50%;
-}
-
 .footer-right i{
     margin-right: 10px;
 }
 
-.small-player-bar .player-bar{
+.player-bar{
     margin: 0;
 }    
+
+
+/*----------
+ RESPONSIVE
+----------*/    
+@media screen and (max-width: 1100px) {
+    .cover-container{
+        width: calc(100% / 4 - 10px);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .cover-container{
+        width: calc(100% / 2 - 10px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .spotify-logo, .mq-hide, .nav-bottom-playlist, .nav-bottom{
+        display: none;
+        
+    }
+
+    .spotify-logo-small{
+        opacity: 1;
+    }
+
+    .side-bar{
+        width: 50px;
+    }
+
+    .install-app{
+        border: none;
+    }
+
+    header, .main-container{
+        width: calc(100% - 50px);
+    }
+
+    .side-bar-top, .side-bar-bottom{
+        align-items: center;
+    }
+
+    .spotify-logo-small{
+        display: flex;
+        margin-bottom: 10px;
+    }
+}
