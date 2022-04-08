@@ -424,6 +424,17 @@ footer{
     }
 }
 
+@media screen and (max-width: 400px) {
+    .cover-container{
+        width: calc(100% - 10px);
+        padding: 20px;
+    }
+
+    .music-row{
+        padding-top: 0;
+    }
+}
+
 /* -------------
    HOVER EFFECTS
 ---------------*/
@@ -440,6 +451,6 @@ footer{
     border-left: 2px solid #adff2f;
 }
 
-.top-nav a:focus:after{
+.top-nav a:focus:after, .top-nav a:hover:after{
     display: block;
 }
