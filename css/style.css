@@ -193,7 +193,7 @@ main{
     justify-content: center;
     flex-wrap: wrap;
     text-transform: uppercase;
-    gap: 20px;
+    column-gap: 20px;
 }
 
 .top-nav a{
@@ -335,7 +335,6 @@ footer{
     height: 5px;
     background-color: #5a5a5a;
     border-radius: 50px;
-    margin: 0 20px;
 }
 
 .footer-center-bottom{
@@ -362,9 +361,9 @@ footer{
     margin-right: 10px;
 }
 
-.player-bar{
-    margin: 0;
-}    
+.volume-bar{
+    width: 20%;
+}
 
 
 /*----------
@@ -433,14 +432,18 @@ footer{
     .music-row{
         padding-top: 0;
     }
+
+    .top-nav{
+        font-size: 14px;
+    }
 }
 
 /* -------------
    HOVER EFFECTS
 ---------------*/
 .side-bar a:hover, .install-app:hover, .top-nav a:hover{
-    color: #fff;
     cursor: pointer;
+    color: #fff;
 }
 
 .upgrade-button:hover{
@@ -453,4 +456,8 @@ footer{
 
 .top-nav a:focus:after, .top-nav a:hover:after{
     display: block;
+}
+
+.top-nav a:focus{
+    color: #fff;
 }
