@@ -54,6 +54,10 @@ body{
     align-items: center;
 }
 
+.nav-top a{
+    border-left: 2px solid transparent;
+}
+
 .nav-bottom a, .nav-bottom-playlist i{
     padding: 10px;
 }
@@ -194,6 +198,19 @@ main{
 
 .top-nav a{
     padding: 3px 5px;
+    position: relative;
+}
+
+.top-nav a::after{
+    content: "";
+    width: 40px;
+    height: 2px;
+    background-color: #adff2f;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
 }
 
 .music-container{
@@ -417,4 +434,12 @@ footer{
 
 .upgrade-button:hover{
     transform: scale(1.1);
+}
+
+.nav-top a:hover, .nav-top a:focus {
+    border-left: 2px solid #adff2f;
+}
+
+.top-nav a:focus:after{
+    display: block;
 }
