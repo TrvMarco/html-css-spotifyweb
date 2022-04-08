@@ -365,6 +365,18 @@ footer{
     width: 20%;
 }
 
+.dot{
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+}
+
+.player-bar::after{
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+}
 
 /*----------
  RESPONSIVE
